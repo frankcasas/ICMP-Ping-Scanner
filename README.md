@@ -55,6 +55,7 @@ Arguments:
 --concurrency : Number of concurrent pings (default: 400)
 
 Example Output:
+```text
 Scanning 254 hosts...
 Scan completed in 1.42 seconds.
 2 hosts are up out of 254 scanned.
@@ -63,7 +64,7 @@ Alive Hosts:
 192.168.1.1
 192.168.1.5
 Alive hosts saved to 'results.csv'.
-
+```
 Legal Disclaimer
 
 This tool is for educational purposes and authorized testing only.
