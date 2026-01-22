@@ -29,7 +29,7 @@ Install dependencies:
 pip install icmplib
 ```
 ```bash
-python ping_scanner.py
+python icmpscannercsv.py
 ```
 Please enter the IP address or subnet: 192.168.1.0/24
 Please enter number of times to ping: 2
@@ -42,7 +42,7 @@ This addresses are being scanned: 192.168.1.0/24
 This scan took 1.42 seconds
 
 ```bash
-python ping_scanner_cli.py -t 192.168.1.0/24 -c 2 -o results.csv
+python icmpscannercsvcli.py -t 192.168.1.0/24 -c 2 -o results.csv
 ```
 Arguments:
 
