@@ -27,9 +27,10 @@ Install dependencies:
 
 ```bash
 pip install icmplib
-
+```
+```bash
 python ping_scanner.py
-
+```
 Please enter the IP address or subnet: 192.168.1.0/24
 Please enter number of times to ping: 2
 
@@ -40,8 +41,20 @@ This addresses are being scanned: 192.168.1.0/24
 254 Hosts scanned
 This scan took 1.42 seconds
 
+```bash
 python ping_scanner_cli.py -t 192.168.1.0/24 -c 2 -o results.csv
+```
+Arguments:
 
+-t / --target : IP or subnet (required)
+
+-c / --count : Number of ping attempts per host (default: 2)
+
+-o / --output : CSV file to save alive hosts (default: alive_hosts.csv)
+
+--concurrency : Number of concurrent pings (default: 400)
+
+Example Output:
 Scanning 254 hosts...
 Scan completed in 1.42 seconds.
 2 hosts are up out of 254 scanned.
@@ -51,3 +64,7 @@ Alive Hosts:
 192.168.1.5
 Alive hosts saved to 'results.csv'.
 
+Legal Disclaimer
+
+This tool is for educational purposes and authorized testing only.
+Do not scan networks or devices without explicit permission.
