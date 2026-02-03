@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Python Ping Scanner with CSV Export (CLI Version)
-Author: Frank Casas
 Description: Scan a single IP or subnet using ICMP pings and export live hosts to CSV.
 Requirements: icmplib
 """
