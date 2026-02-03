@@ -30,31 +30,32 @@ pip install icmplib
 ```
 ```bash
 python icmpscannercsv.py
+``` bash
+Please enter the IP address or subnet: 192.168.1.0/24  
+Please enter number of times to ping: 2  
+
+
+This addresses are being scanned: 192.168.1.0/24  
+[Host(address='192.168.1.1'), Host(address='192.168.1.5')]  
+2 Hosts are up  
+254 Hosts scanned  
+This scan took 1.42 seconds  
 ```
-Please enter the IP address or subnet: 192.168.1.0/24
-Please enter number of times to ping: 2
-
-
-This addresses are being scanned: 192.168.1.0/24
-[Host(address='192.168.1.1'), Host(address='192.168.1.5')]
-2 Hosts are up
-254 Hosts scanned
-This scan took 1.42 seconds
 
 ```bash
 python icmpscannercsvcli.py -t 192.168.1.0/24 -c 2 -o results.csv
 ```
 Arguments:
 
--t / --target : IP or subnet (required)
+-t / --target : IP or subnet (required)  
 
--c / --count : Number of ping attempts per host (default: 2)
+-c / --count : Number of ping attempts per host (default: 2)  
 
--o / --output : CSV file to save alive hosts (default: alive_hosts.csv)
+-o / --output : CSV file to save alive hosts (default: alive_hosts.csv)  
 
---concurrency : Number of concurrent pings (default: 400)
+--concurrency : Number of concurrent pings (default: 400)  
 
-Example Output:
+Example Output:  
 ```text
 Scanning 254 hosts...
 Scan completed in 1.42 seconds.
@@ -65,7 +66,7 @@ Alive Hosts:
 192.168.1.5
 Alive hosts saved to 'results.csv'.
 ```
-Legal Disclaimer
+Legal Disclaimer  
 
-This tool is for educational purposes and authorized testing only.
-Do not scan networks or devices without explicit permission.
+This tool is for educational purposes and authorized testing only.  
+Do not scan networks or devices without explicit permission.  
